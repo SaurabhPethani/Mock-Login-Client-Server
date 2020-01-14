@@ -7,7 +7,6 @@ ss.bind(('localhost', 3888))
 ss.listen(3)
 
 client,addr = ss.accept()
-print(type(client))
 print("Client connected!")
 
 uname = client.recv(1024).decode('utf-8')
